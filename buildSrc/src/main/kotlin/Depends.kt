@@ -47,6 +47,7 @@ object Depends {
     // 去这里下载素材【https://lottiefiles.com/】
     const val lottie = "com.airbnb.android:lottie:4.2.2"
 
+    // 可定制化阴影的万能阴影布局 https://github.com/lihangleo2/ShadowLayout
     const val shadowLayout = "com.github.lihangleo2:ShadowLayout:3.2.4"
 
     // Android WebView ，极度容易使用以及功能强大的库 https://github.com/Justson/AgentWeb

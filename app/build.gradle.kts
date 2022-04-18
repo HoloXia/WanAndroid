@@ -45,9 +45,6 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.3.0")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     //单元测试组件库
     testImplementation(Testing.jUnit)
     androidTestImplementation(Testing.extJUnit)
@@ -113,7 +110,6 @@ dependencies {
     implementation(SmartRefreshLayout.headerMaterial)
 
     implementation(Depends.lottie)
-    implementation(Depends.magicIndicator)
 
     implementation(Depends.banner)
     implementation(Depends.likeView)

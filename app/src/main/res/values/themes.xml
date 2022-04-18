@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WanAndroid" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- 您的应用的主要品牌颜色，主要用于主题 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 您的主要品牌颜色的较浅/较暗变体，在主题中很少使用 -->
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <!-- 用于显示在原色上方的元素的颜色（例如，文本和图标，根据可访问性，通常为白色或半透明的黑色） -->
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- 您应用程式的次要品牌色彩，主要用于强调某些需要突出的小部件 -->
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:colorControlNormal">@color/colorDivider</item>
+        <item name="colorControlNormal">@color/colorDivider</item>
+
+        <!-- 默认竖屏 -->
+        <item name="android:screenOrientation">portrait</item>
+        <!--应为字母默认全部大写关闭-->
+        <item name="android:textAllCaps">false</item>
+
+        <item name="md_corner_radius">10dp</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <gradient android:endColor="#99E57815" android:startColor="#99F4B02F" android:type="linear" />
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <ripple android:color="#CCCAC2"> <!--波纹颜色-->
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:endColor="@color/colorPrimary" android:startColor="@color/colorPrimaryLight" android:type="linear" />
+                    <corners android:radius="6dp" />
+                </shape>
+            </item>
+        </ripple>
+    </item>
+
+
+</selector>
+

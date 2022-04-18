@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical"
+    app:hl_cornerRadius="15dp"
+    app:hl_layoutBackground="#f6f6f6"
+    app:hl_layoutBackground_true="@color/colorRipple"
+    app:hl_shapeMode="ripple">
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextSubStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/textPrimary"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="开发环境" />
+</com.lihang.ShadowLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="10dp">
+
+    <com.lihang.ShadowLayout
+        style="@style/textMainStyle"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+        app:hl_layoutBackground="@color/bgShimmer" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="60dp"
+            android:layout_height="12dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="80dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="60dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="120dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="130dp"
+            android:layout_height="12dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="80dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+        <com.lihang.ShadowLayout
+            style="@style/textMainStyle"
+            android:layout_width="60dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="10dp"
+            app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+            app:hl_layoutBackground="@color/bgShimmer" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

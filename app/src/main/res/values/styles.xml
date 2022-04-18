@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textTitleStyle">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_title_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textMainStyle">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_main_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra</item>
+    </style>
+
+    <style name="textMainBoldStyle">
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_main_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSecondStyle">
+        <item name="android:textColor">@color/textSecond</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_second_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra</item>
+    </style>
+
+    <style name="TextSubStyle">
+        <item name="android:textColor">@color/textSecond</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_sub_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra</item>
+    </style>
+
+    <style name="TextTipStyle">
+        <item name="android:textColor">@color/textSecond</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="android:textSize">@dimen/sp_tip_text_size</item>
+        <item name="android:lineSpacingExtra">@dimen/dp_line_space_extra</item>
+    </style>
+
+    <!-- TabLayout字体自定义 -->
+    <style name="TabTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!-- 首页TabLayout自定义 -->
+    <style name="TabHomeStyle">
+        <item name="tabBackground">@color/transParent</item>
+        <!--        <item name="tabIndicator">@drawable/tab_indicator_home</item>-->
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/TabTextStyle</item>
+        <item name="tabRippleColor">@color/transParent</item>
+        <item name="tabTextColor">@color/textPrimary</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TabMsgStyle">
+        <item name="tabBackground">@color/transParent</item>
+        <!--        <item name="tabIndicator">@drawable/tab_indicator_home</item>-->
+        <item name="tabIndicatorColor">@color/colorPrimary</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabTextAppearance">@style/TabTextStyle</item>
+        <item name="tabRippleColor">@color/transParent</item>
+        <item name="tabTextColor">@color/textSecond</item>
+        <item name="android:textSize">16sp</item>
+        <item name="tabSelectedTextColor">@color/colorPrimary</item>
+    </style>
+
+    <!--    自定义验证码输入框-->
+    <declare-styleable name="VerifiCodeEditText">
+        <attr name="password" format="boolean" />
+        <attr name="showCursor" format="boolean" />
+        <attr name="highLightEnable" format="boolean" />
+        <attr name="highLightBefore" format="boolean" />
+        <attr name="separateType" format="reference|integer" />
+        <attr name="maxLength" format="integer" />
+        <attr name="corner" format="dimension" />
+        <attr name="borderColor" format="color|reference" />
+        <attr name="blockColor" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="highlightColor" format="color|reference" />
+        <attr name="blockSpacing" format="dimension" />
+        <attr name="cursorDuration" format="integer" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="color|reference" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="showKeyboard" format="boolean" />
+    </declare-styleable>
+
+    <integer name="type_hollow">1</integer>
+    <integer name="type_solid">2</integer>
+    <integer name="type_underline">3</integer>
+
+    <style name="CustomOutlineBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/colorDivider</item>
+        <item name="android:textColorHint">@color/textHint</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+    </style>
+</resources>

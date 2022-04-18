@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    app:hl_layoutBackground="@color/white"
+    app:hl_layoutBackground_true="@color/colorRipple"
+    app:hl_shapeMode="ripple">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_author"
+            style="@style/TextSecondStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="作者" />
+
+        <com.lihang.ShadowLayout
+            android:id="@+id/sl_new_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="1dp"
+            android:visibility="gone"
+            app:hl_cornerRadius="2dp"
+            app:hl_strokeColor="@color/red"
+            app:hl_strokeWith="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_author"
+            app:layout_constraintStart_toEndOf="@id/tv_author"
+            app:layout_constraintTop_toTopOf="@id/tv_author">
+
+            <TextView
+                style="@style/TextTipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新"
+                android:textColor="@color/red" />
+        </com.lihang.ShadowLayout>
+
+        <com.lihang.ShadowLayout
+            android:id="@+id/sl_type_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="1dp"
+            android:visibility="gone"
+            app:hl_cornerRadius="2dp"
+            app:hl_strokeColor="@color/green"
+            app:hl_strokeWith="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_author"
+            app:layout_constraintStart_toEndOf="@id/sl_new_tag"
+            app:layout_constraintTop_toTopOf="@id/tv_author">
+
+            <TextView
+                android:id="@+id/tv_type_tag"
+                style="@style/TextTipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本站发布"
+                android:textColor="@color/green" />
+        </com.lihang.ShadowLayout>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            style="@style/TextSubStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_author"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_author"
+            tools:text="三周前" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textMainBoldStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_author"
+            tools:text="我是文章标题我是文章标题我是文章标题" />
+
+        <com.lihang.ShadowLayout
+            android:id="@+id/sl_top_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:paddingHorizontal="3dp"
+            android:paddingVertical="1dp"
+            android:visibility="gone"
+            app:hl_cornerRadius="2dp"
+            app:hl_strokeColor="@color/red"
+            app:hl_strokeWith="1dp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_category"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_category">
+
+            <TextView
+                style="@style/TextTipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="置顶"
+                android:textColor="@color/red" />
+        </com.lihang.ShadowLayout>
+
+        <TextView
+            android:id="@+id/tv_category"
+            style="@style/TextSubStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:layout_marginStart="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/sl_top_tag"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_goneMarginStart="16dp"
+            tools:text="分类/分类" />
+
+        <com.jaren.lib.view.LikeView
+            android:id="@+id/like_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cirRadius="10dp"
+            app:cycleTime="600"
+            app:defaultColor="#ff657487"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.lihang.ShadowLayout>

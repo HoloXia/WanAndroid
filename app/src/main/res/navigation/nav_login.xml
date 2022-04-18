@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.holo.wanandroid.ui.login.LoginFragment"
+        android:label="LoginFragment">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.holo.wanandroid.ui.login.RegisterFragment"
+        android:label="RegisterFragment" />
+</navigation>

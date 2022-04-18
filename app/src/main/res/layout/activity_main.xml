@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgPage"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-5dp"
+        android:layout_weight="1" />
+
+    <com.lihang.ShadowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hl_cornerRadius="0dp"
+        app:hl_layoutBackground="@color/white"
+        app:hl_layoutBackground_true="@color/white"
+        app:hl_shadowColor="@color/bgNavigationShadow"
+        app:hl_shadowHiddenBottom="true"
+        app:hl_shadowHiddenLeft="true"
+        app:hl_shadowHiddenRight="true"
+        app:hl_shadowLimit="5dp"
+        app:hl_shapeMode="ripple"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioGroup
+            android:id="@+id/nav_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/nav_home"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@mipmap/nav_icon_home"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/nav_color_text"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="@string/str_home_page"
+                android:textColor="@color/nav_color_text"
+                android:textSize="12sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/nav_project"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@mipmap/nav_icon_project"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/nav_color_text"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="@string/str_project"
+                android:textColor="@color/nav_color_text"
+                android:textSize="12sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/nav_discovery"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@mipmap/nav_icon_discovery"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/nav_color_text"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="@string/str_discovery"
+                android:textColor="@color/nav_color_text"
+                android:textSize="12sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/nav_public"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@mipmap/nav_icon_public"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/nav_color_text"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="@string/str_public"
+                android:textColor="@color/nav_color_text"
+                android:textSize="12sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/nav_mine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?selectableItemBackgroundBorderless"
+                android:button="@null"
+                android:drawableTop="@mipmap/nav_icon_mine"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/nav_color_text"
+                android:gravity="center"
+                android:paddingVertical="6dp"
+                android:text="@string/str_mine"
+                android:textColor="@color/nav_color_text"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </com.lihang.ShadowLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

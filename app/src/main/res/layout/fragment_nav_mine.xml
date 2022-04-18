@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:background="@drawable/shape_gradient"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/iv_avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_default_avatar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:roundPercent="1" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/textMainBoldStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="请先登录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_avatar" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_user_name">
+
+            <TextView
+                android:id="@+id/tv_level"
+                style="@style/TextSecondStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID：-" />
+
+            <TextView
+                android:id="@+id/tv_rank"
+                style="@style/TextSecondStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="排名：-" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vg_my_integral"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/textMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="我的积分"
+            app:drawableStartCompat="@mipmap/ic_integral"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_integral"
+            style="@style/TextSubStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            app:drawableEndCompat="@mipmap/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vg_integral_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/textMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="积分排行"
+            app:drawableStartCompat="@mipmap/ic_rank_list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vg_my_collect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/textMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="我的收藏"
+            app:drawableStartCompat="@mipmap/ic_collect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vg_github"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/textMainStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:text="项目主页"
+            app:drawableStartCompat="@mipmap/ic_github"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_right_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/textMainBoldStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?selectableItemBackground"
+        android:gravity="center"
+        android:text="退出登录"
+        android:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>

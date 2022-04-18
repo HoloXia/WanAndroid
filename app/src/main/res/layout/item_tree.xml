@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lihang.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_root"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    app:hl_layoutBackground="@color/white"
+    app:hl_layoutBackground_true="@color/colorRipple"
+    app:hl_shapeMode="ripple">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/textMainStyle"
+            android:textColor="@color/textSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="开发环境" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="com.google.android.flexbox.FlexboxLayoutManager" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.lihang.ShadowLayout>

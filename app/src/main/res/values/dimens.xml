@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sp_toolbar_title">18sp</dimen>
+    <dimen name="sp_title_text_size">16sp</dimen>
+    <dimen name="sp_main_text_size">15sp</dimen>
+    <dimen name="sp_second_text_size">14sp</dimen>
+    <dimen name="sp_sub_text_size">12sp</dimen>
+    <dimen name="sp_tip_text_size">10sp</dimen>
+
+    <dimen name="dp_line_space_extra_title">5dp</dimen>
+    <dimen name="dp_line_space_extra">4dp</dimen>
+
+    <dimen name="dp_img_round">5dp</dimen>
+
+    <dimen name="dp_toolbar_height">45dp</dimen>
+
+    <dimen name="dp_tab_layout_height">40dp</dimen>
+    <dimen name="dp_item_radius">5dp</dimen>
+    <dimen name="dp_shimmer_radius">15dp</dimen>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/icon_base_failed" />
+
+    <TextView
+        android:id="@+id/tv_failed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="抱歉，数据获取失败"
+        android:textColor="#666666" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_retry"
+        style="@style/UnElevatedButton"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="重新加载"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:backgroundTint="?colorPrimary"
+        app:cornerRadius="8dp" />
+
+</LinearLayout>

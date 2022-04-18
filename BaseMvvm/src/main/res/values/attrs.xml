@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleBar">
+        <!-- TitleBar的背景色 -->
+        <attr name="barBackground" format="reference|color" />
+        <!-- 返回按钮图标 -->
+        <attr name="navigationIcon" format="reference" />
+        <!-- 返回按钮图标着色 -->
+        <attr name="navigationIconTint" format="color" />
+
+        <!-- 标题-->
+        <attr name="title" format="reference|string" />
+        <!-- 标题文字颜色 -->
+        <attr name="titleTextColor" format="color" />
+        <!-- 标题文字大小 -->
+        <attr name="titleTextSize" format="dimension" />
+        <!-- 标题是否居中 -->
+        <attr name="titleCentered" format="boolean" />
+
+        <!-- 图标菜单 -->
+        <attr name="menuIcon" format="reference" />
+
+        <!-- 文字菜单标题 -->
+        <attr name="menuTitle" format="reference|string" />
+        <!-- 菜单文字颜色 -->
+        <attr name="menuTitleColor" format="color" />
+        <!-- 菜单文字大小 -->
+        <attr name="menuTitleSize" format="dimension" />
+
+        <!-- 菜单按钮标题 -->
+        <attr name="menuBtnTitle" format="reference|string" />
+        <!-- 菜单按钮文字颜色 -->
+        <attr name="menuBtnTextColor" format="color" />
+        <!-- 菜单按钮文字大小-->
+        <attr name="menuBtnTextSize" format="dimension" />
+        <!-- 菜单按钮背景色 -->
+        <attr name="menuBtnBackgroundColor" format="color" />
+        <!-- 菜单按钮背景drawable -->
+        <attr name="menuBtnBackgroundDrawable" format="reference" />
+        <!-- 菜单按钮圆角 -->
+        <attr name="menuBtnCornerRadius" format="dimension" />
+
+
+        <!-- 是否显示标题栏下划线 -->
+        <attr name="barShowDivider" format="boolean" />
+    </declare-styleable>
+</resources>

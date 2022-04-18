@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="39dp">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcome_title"
+        style="@style/textMainBoldStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="欢迎来到WanAndroid"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_account"
+        style="@style/textMainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:hint="请输入账号"
+        app:layout_constraintTop_toBottomOf="@id/tv_welcome_title" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_psw"
+        style="@style/textMainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        app:layout_constraintTop_toBottomOf="@id/et_account" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_re_psw"
+        style="@style/textMainStyle"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:maxLength="18"
+        app:layout_constraintTop_toBottomOf="@id/et_psw" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_confirm"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_click_button"
+        android:enabled="false"
+        android:text="注册"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/et_re_psw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

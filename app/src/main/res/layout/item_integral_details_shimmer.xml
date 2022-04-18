@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <com.lihang.ShadowLayout
+        android:id="@+id/tv_title"
+        android:layout_width="80dp"
+        android:layout_height="15dp"
+        app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+        app:hl_layoutBackground="@color/bgShimmer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.lihang.ShadowLayout
+        android:id="@+id/tv_create_time"
+        android:layout_width="120dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="6dp"
+        app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+        app:hl_layoutBackground="@color/bgShimmer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <com.lihang.ShadowLayout
+        android:id="@+id/tv_integral"
+        style="@style/textMainBoldStyle"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        app:hl_cornerRadius="@dimen/dp_shimmer_radius"
+        app:hl_layoutBackground="@color/bgShimmer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

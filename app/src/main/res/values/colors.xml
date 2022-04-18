@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E57815</color>
+    <color name="colorPrimaryVariant">#BA7815</color>
+    <color name="colorPrimaryLight">#F4B02F</color>
+    <color name="colorAccent">#F3F6FF</color>
+
+    <color name="bgPage">#F3F3F7</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#E96D6B</color>
+    <color name="green">#66DFAA</color>
+    <color name="gray">#D7DBDC</color>
+    <color name="transParent">#00000000</color>
+    <color name="translucent36">#36000000</color>
+    <color name="translucent55">#55000000</color>
+    <color name="translucent99">#99000000</color>
+
+    <color name="colorPrimaryHighLight">#EED7AD</color>
+    <color name="textPrimary">#272727</color>
+    <color name="textSecond">#6D7E82</color>
+    <color name="textTip">#999999</color>
+    <color name="textHint">#55333333</color>
+    <color name="colorDivider">#E6E6E6</color>
+    <color name="colorDividerDark">#BEBEBE</color>
+    <color name="colorRipple">#CDCDCD</color>
+    <color name="colorNodDataBtn">#EEEEEE</color>
+    <color name="bgShimmer">#DFDFDF</color>
+
+    <color name="colorEnableFalse">#D4D4D4</color>
+    <color name="bgAbstract">#F5F5F5</color>
+    <color name="bgNavigationShadow">#2a000000</color>
+    <color name="bgShadow">#0F000000</color>
+
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_logo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_account"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="15dp"
+        android:hint="账号"
+        android:theme="@style/CustomOutlineBox"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_psw"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:hint="密码"
+        android:theme="@style/CustomOutlineBox"
+        app:endIconMode="clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_to_register"
+        style="@style/TextSecondStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="13dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:drawablePadding="6dp"
+        android:text="去注册"
+        app:drawableEndCompat="@mipmap/ic_reg_arrow" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        style="@style/Button"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_click_button"
+        android:enabled="false"
+        android:text="登录"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@id/et_psw" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

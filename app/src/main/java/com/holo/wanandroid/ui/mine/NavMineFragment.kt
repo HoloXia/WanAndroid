@@ -56,7 +56,7 @@ class NavMineFragment : BaseFragment<FragmentNavMineBinding>() {
         binding.vgGithub.clickNoRepeat {
             startActivity<WebActivity>(
                 Constant.KEY_WEB_TITLE to "Github",
-                Constant.KEY_WEB_URL to "https://github.com/holoXia"
+                Constant.KEY_WEB_URL to "https://github.com/HoloXia/WanAndroid"
             )
         }
         binding.tvLogout.clickNoRepeat { viewModel.doLogout() }

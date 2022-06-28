@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:text="@string/app_show_name"
         android:textColor="@color/colorPrimaryLight"
-        android:textSize="60sp"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

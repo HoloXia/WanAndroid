@@ -6,10 +6,11 @@ import androidx.fragment.app.viewModels
 import com.google.android.material.tabs.TabLayoutMediator
 import com.gyf.immersionbar.ktx.statusBarHeight
 import com.holo.architecture.base.fragment.BaseFragment
+import com.holo.loadstate.LoadService
 import com.holo.wanandroid.databinding.FragmentNavPublicnumBinding
 import com.holo.wanandroid.ext.init
+import com.holo.wanandroid.ext.loadServiceInit
 import com.holo.wanandroid.ui.discovery.DiscoveryViewModel
-import com.holo.wanandroid.ui.projects.ProjectsFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 /**
@@ -23,6 +24,7 @@ class NavPublicNumFragment : BaseFragment<FragmentNavPublicnumBinding>() {
 
     private val viewModel: DiscoveryViewModel by viewModels()
 
+    private lateinit var loads: LoadService
     private val fragmentList: MutableList<BaseFragment<*>> = mutableListOf()
     private val titleList: MutableList<String> = mutableListOf()
 
@@ -30,6 +32,10 @@ class NavPublicNumFragment : BaseFragment<FragmentNavPublicnumBinding>() {
         val params = binding.titleBar.layoutParams as LinearLayout.LayoutParams
         params.height = statusBarHeight
         binding.titleBar.layoutParams = params
+
+        loads = loadServiceInit(binding.contentView) {
+            initData()
+        }
     }
 
     override fun initData() {
@@ -37,17 +43,21 @@ class NavPublicNumFragment : BaseFragment<FragmentNavPublicnumBinding>() {
     }
 
     override fun observeViewModel() {
-        observerObj(viewModel.publicNumListResp) { list ->
+        observer(viewModel.publicNumListResp, success = { list ->
+            loads.hide()
             activity?.let { act ->
-                list?.forEach { bean ->
+                list.forEach { bean ->
                     fragmentList.add(PublicArticleFragment.newInstance(bean.id))
                     titleList.add(bean.name)
+
+                    binding.viewPager.init(act, fragmentList)
+                    TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
+                        tab.text = titleList[position]
+                    }.attach()
                 }
-                binding.viewPager.init(act, fragmentList)
-                TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
-                    tab.text = titleList[position]
-                }.attach()
             }
-        }
+        }, error = {
+            loads.showFailed()
+        })
     }
 }

@@ -40,7 +40,7 @@ class WanRemoteData @Inject constructor(private val service: WanService) : IRemo
 
     suspend fun getNavigationList(): List<NavigationBean>? = processCallObj { service.getNavigationList() }
 
-    suspend fun getPublicNumList(): List<CategoryBean>? = processCallObj { service.getPublicNumList() }
+    suspend fun getPublicNumList(): State<List<CategoryBean>> = processCall { service.getPublicNumList() }
 
     suspend fun getPublicArticleList(page: Int, pnId: Int): ListState<ArticleBean> = processListCall(page) { service.getPublicNumArticleList(page, pnId) }
 

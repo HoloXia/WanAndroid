@@ -11,17 +11,27 @@
         android:layout_width="match_parent"
         android:layout_height="0dp" />
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
-        style="@style/TabMsgStyle"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_view"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_tab_layout_height"
-        app:tabIndicator="@drawable/tab_indicator"
-        app:tabMode="scrollable" />
+        android:layout_height="match_parent">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:background="@color/bgPage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/TabMsgStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_tab_layout_height"
+            app:layout_constraintBottom_toTopOf="@id/view_pager"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabMode="scrollable" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/bgPage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tab_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

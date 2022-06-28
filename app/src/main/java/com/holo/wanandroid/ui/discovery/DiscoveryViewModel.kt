@@ -3,6 +3,7 @@ package com.holo.wanandroid.ui.discovery
 import androidx.lifecycle.viewModelScope
 import com.holo.architecture.base.viewmodel.BaseViewModel
 import com.holo.architecture.network.ListState
+import com.holo.architecture.network.State
 import com.holo.wanandroid.data.dto.ArticleBean
 import com.holo.wanandroid.data.dto.CategoryBean
 import com.holo.wanandroid.data.dto.NavigationBean
@@ -63,12 +64,12 @@ class DiscoveryViewModel @Inject constructor(
         }
     }
 
-    private val _publicNumListResp = MutableSharedFlow<List<CategoryBean>>()
+    private val _publicNumListResp = MutableSharedFlow<State<List<CategoryBean>>>()
     val publicNumListResp = _publicNumListResp.asSharedFlow()
 
     fun getPublicNumList() {
         viewModelScope.launch {
-            repo.getPublicNumList().collect { _publicNumListResp.emit(it ?: emptyList()) }
+            repo.getPublicNumList().collect { _publicNumListResp.emit(it) }
         }
     }
 
